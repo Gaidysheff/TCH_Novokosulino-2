@@ -3,7 +3,7 @@ from newsapp.views import *
 
 
 urlpatterns = [
-    path('', index),
-    path('tables/', tables),
-    path('charts/', charts),
+    path('', index, name='home'),
+    path('tables/', tables, name='tables'),
+    path('charts/', charts, name='charts'),
 ]
