@@ -27,6 +27,16 @@
 
     <!-- Custom styles for this template-->
     <link href="{% static 'newsapp/css/sb-admin-2.css' %}" rel="stylesheet" />
+
+    <!-- Link & Script for tables -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://use.fontawesome.com/releases/v6.3.0/js/all.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body id="page-top">
@@ -40,7 +50,7 @@
         <!-- Sidebar - Brand -->
         <a
           class="sidebar-brand d-flex align-items-center justify-content-center"
-          href="index.html"
+          href="{% url 'home' %}"
         >
           <div class="sidebar-brand-icon rotate-n-15">
             <i class="fas fa-laugh-wink"></i>
@@ -565,5 +575,8 @@
     <script src="{% static 'newsapp/js/demo/chart-area-demo2.js' %}"></script>
     <script src="{% static 'newsapp/js/demo/chart-pie-demo2.js' %}"></script>
     <script src="{% static 'newsapp/js/demo/chart-bar-demo2.js' %}"></script>
+
+    <!-- Link & Script for tables -->
+    <script src="{% static 'newsapp/js/tables/datatables-simple-demo.js' %}"></script>
   </body>
 </html>
