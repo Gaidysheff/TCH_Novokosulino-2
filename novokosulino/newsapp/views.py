@@ -13,3 +13,7 @@ def tables(request):
 
 def charts(request):
     return render(request, "newsapp/charts.html", {'menu': menu, 'title': 'Графики'})
+
+
+def charts_test(request):
+    return render(request, "newsapp/charts_test.html", {'menu': menu, 'title': 'Графики_TEST'})

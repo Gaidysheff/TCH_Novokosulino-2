@@ -14,6 +14,12 @@
 
     <title>{{ title }}</title>
 
+    <link
+      rel="shortcut icon"
+      href="{% static 'newsapp/img/H2.ico' %}"
+      type="image/x-icon"
+    />
+
     <!-- Custom fonts for this template-->
     <link
       href="{% static 'newsapp/vendor/fontawesome-free/css/all.min.css' %}"
@@ -26,13 +32,25 @@
     />
 
     <!-- Custom styles for this template-->
-    <link href="{% static 'newsapp/css/sb-admin-2.css' %}" rel="stylesheet" />
+    <link
+      href="{% static 'newsapp/css/sb-admin-2.min.css' %}"
+      rel="stylesheet"
+    />
 
     <!-- Link & Script for tables -->
+
+    <!-- --------------------- -->
+    <!-- <link href="{% static 'newsapp/css/styles.css' %}" rel="stylesheet" /> -->
     <link
       href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css"
       rel="stylesheet"
     />
+    <!-- --------------------- -->
+
+    <!-- Connecting my style -->
+
+    <link rel="stylesheet" href="{% static 'newsapp/css/my_style.css' %}" />
+
     <script
       src="https://use.fontawesome.com/releases/v6.3.0/js/all.js"
       crossorigin="anonymous"
@@ -48,13 +66,16 @@
         id="accordionSidebar"
       >
         <!-- Sidebar - Brand -->
+        <div class="sidebar-logo">
+          <img
+            src="{% static 'newsapp/img/LOGO_reverse.png' %}"
+            alt="Logo of Novokosulino-2"
+          />
+        </div>
         <a
           class="sidebar-brand d-flex align-items-center justify-content-center"
           href="{% url 'home' %}"
         >
-          <div class="sidebar-brand-icon rotate-n-15">
-            <i class="fas fa-laugh-wink"></i>
-          </div>
           <div class="sidebar-brand-text mx-1">Новокосулино-2</div>
         </a>
 
@@ -577,6 +598,12 @@
     <script src="{% static 'newsapp/js/demo/chart-bar-demo2.js' %}"></script>
 
     <!-- Link & Script for tables -->
-    <script src="{% static 'newsapp/js/tables/datatables-simple-demo.js' %}"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="{% static 'newsapp/js/tables/datatables-simple.js' %}"></script>
+
+    <!-- ----------------------------------- -->
   </body>
 </html>

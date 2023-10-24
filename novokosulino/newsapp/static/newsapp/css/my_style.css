@@ -1,0 +1,21 @@
+/* .sidebar-brand-text::before {
+  content: "";
+  display: block;
+  width: 28px;
+  height: 16px;
+  background: url("../../newsapp/img/LOGO_reverse.png") 0 0 / 100% no-repeat;
+  margin-left: 8px;
+} */
+
+.sidebar-logo {
+  width: 100%;
+  display: flex;
+  margin-top: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar-logo img {
+  height: auto;
+  width: 50%;
+}
