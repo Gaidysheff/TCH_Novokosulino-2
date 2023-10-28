@@ -26,10 +26,10 @@
       rel="stylesheet"
       type="text/css"
     />
-    <link
+    <!-- <link
       href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
       rel="stylesheet"
-    />
+    /> -->
 
     <!-- Custom styles for this template-->
     <link
@@ -236,6 +236,7 @@
             </button>
 
             <!-- Topbar Search -->
+
             <form
               class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search"
             >
@@ -295,6 +296,12 @@
               </li>
 
               {% if request.user.is_authenticated %}
+              <span></span>
+              {% if messages %} {% for message in messages %}
+              <div class="alert alert-danger text-center" role="alert">
+                {{message}}
+              </div>
+              {% endfor %} {% endif %}
               <!-- Nav Item - Alerts -->
               <li class="nav-item dropdown no-arrow mx-1">
                 <a
@@ -502,7 +509,7 @@
                   <div class="dropdown-divider"></div>
                   <a
                     class="dropdown-item"
-                    href="#"
+                    href="{% url 'home' %}"
                     data-toggle="modal"
                     data-target="#logoutModal"
                   >
@@ -603,6 +610,11 @@
     <script src="{% static 'newsapp/js/demo/chart-area-demo2.js' %}"></script>
     <script src="{% static 'newsapp/js/demo/chart-pie-demo2.js' %}"></script>
     <script src="{% static 'newsapp/js/demo/chart-bar-demo2.js' %}"></script>
+    <script src="{% static 'newsapp/js/demo/chart-pie-demo3.js' %}"></script>
+    <script src="{% static 'newsapp/js/demo/chart-pie-demo4.js' %}"></script>
+    <script src="{% static 'newsapp/js/demo/chart-pie-demo5.js' %}"></script>
+    <script src="{% static 'newsapp/js/demo/chart-pie-demo6.js' %}"></script>
+    <script src="{% static 'newsapp/js/demo/chart-pie-demo7.js' %}"></script>
 
     <!-- Link & Script for tables -->
     <script

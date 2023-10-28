@@ -1,7 +1,6 @@
-{% extends 'newsapp/base.html' %}
+{% extends 'newsapp/base.html' %} {% block content %}
 <title>{{title}}</title>
 
-{% block content %}
 <!-- Content Row -->
 <div class="container-fluid">
   <h1 class="mt-4">Графики</h1>
@@ -64,14 +63,25 @@
         </div>
       </div>
     </div>
+    <!-- ============================================================================= -->
     <!-- Pie Chart -->
+    <!-- novokosulino\newsapp\static\newsapp\js\demo\chart-pie-demo.js -->
+    <!-- id= myPieChart -->
     <div class="col-xl-4 col-lg-5">
       <div class="card shadow mb-4">
         <!-- Card Header - Dropdown -->
         <div
           class="card-header py-3 d-flex flex-row align-items-center justify-content-between"
         >
-          <h6 class="m-0 font-weight-bold text-primary">Revenue Sources</h6>
+          <h6 class="m-0 text-primary">
+            Утверждение кандидата на должность
+            <span class="m-0 font-weight-bold"
+              >председателя внеочередного Общего собрания членов
+              Товарищества</span
+            >
+            - <br />
+            <i>Варовинуа Ольга Игоревна</i>
+          </h6>
           <div class="dropdown no-arrow">
             <a
               class="dropdown-toggle"
@@ -103,19 +113,333 @@
           </div>
           <div class="mt-4 text-center small">
             <span class="mr-2">
-              <i class="fas fa-circle text-primary"></i> Direct
+              <i class="fas fa-circle" style="color: #1cc88a"></i> За
             </span>
             <span class="mr-2">
-              <i class="fas fa-circle text-success"></i> Social
+              <i class="fas fa-circle" style="color: #dcde73"></i> Воздержались
             </span>
             <span class="mr-2">
-              <i class="fas fa-circle text-info"></i> Referral
+              <i class="fas fa-circle" style="color: #de7373"></i> Против
             </span>
           </div>
         </div>
       </div>
     </div>
+    <!-- ============================================================================= -->
+
+    <!-- Pie Chart -->
+    <!-- novokosulino\newsapp\static\newsapp\js\demo\chart-pie-demo4.js -->
+    <!-- id= myPieChart -->
+    <div class="col-xl-4 col-lg-5">
+      <div class="card shadow mb-4">
+        <!-- Card Header - Dropdown -->
+        <div
+          class="card-header py-3 d-flex flex-row align-items-center justify-content-between"
+        >
+          <h6 class="m-0 text-primary">
+            Утверждение кандидата на должность
+            <span class="m-0 font-weight-bold"
+              >секретаря внеочередного Общего собрания членов Товарищества</span
+            >
+            - <br />
+            <i>Шмаков Евгений Владимирович</i>
+          </h6>
+          <div class="dropdown no-arrow">
+            <a
+              class="dropdown-toggle"
+              href="#"
+              role="button"
+              id="dropdownMenuLink"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+            </a>
+            <div
+              class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
+              aria-labelledby="dropdownMenuLink"
+            >
+              <div class="dropdown-header">Dropdown Header:</div>
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div>
+        </div>
+        <!-- Card Body -->
+        <div class="card-body">
+          <div class="chart-pie pt-4 pb-2">
+            <canvas id="Secretary"></canvas>
+          </div>
+          <div class="mt-4 text-center small">
+            <span class="mr-2">
+              <i class="fas fa-circle" style="color: #1cc88a"></i> За
+            </span>
+            <span class="mr-2">
+              <i class="fas fa-circle" style="color: #dcde73"></i> Воздержались
+            </span>
+            <span class="mr-2">
+              <i class="fas fa-circle" style="color: #de7373"></i> Против
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ============================================================================= -->
+
+    <!-- Pie Chart -->
+    <!-- novokosulino\newsapp\static\newsapp\js\demo\chart-pie-demo.js -->
+    <!-- id= myPieChart -->
+    <div class="col-xl-4 col-lg-5">
+      <div class="card shadow mb-4">
+        <!-- Card Header - Dropdown -->
+        <div
+          class="card-header py-3 d-flex flex-row align-items-center justify-content-between"
+        >
+          <h6 class="m-0 text-primary">
+            Утверждение кандидатов
+            <span class="m-0 font-weight-bold"
+              >в члены Правления Товарищества</span
+            >
+            - <br />
+            <i>- Варовина Ольга Игоревна;</i>
+            <br />
+            <i>- Шмаков Евгений Владимирович;</i>
+            <br />
+            <i>- Гайдышев Евгений Геннадьевич</i>
+          </h6>
+          <div class="dropdown no-arrow">
+            <a
+              class="dropdown-toggle"
+              href="#"
+              role="button"
+              id="dropdownMenuLink"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+            </a>
+            <div
+              class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
+              aria-labelledby="dropdownMenuLink"
+            >
+              <div class="dropdown-header">Dropdown Header:</div>
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div>
+        </div>
+        <!-- Card Body -->
+        <div class="card-body">
+          <div class="chart-pie pt-4 pb-2">
+            <canvas id="StearingCommittee"></canvas>
+          </div>
+          <div class="mt-4 text-center small">
+            <span class="mr-2">
+              <i class="fas fa-circle" style="color: #1cc88a"></i> За
+            </span>
+            <span class="mr-2">
+              <i class="fas fa-circle" style="color: #dcde73"></i> Воздержались
+            </span>
+            <span class="mr-2">
+              <i class="fas fa-circle" style="color: #de7373"></i> Против
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ============================================================================= -->
+    <!-- Pie Chart -->
+    <!-- novokosulino\newsapp\static\newsapp\js\demo\chart-pie-demo.js -->
+    <!-- id= myPieChart -->
+    <div class="col-xl-4 col-lg-5">
+      <div class="card shadow mb-4">
+        <!-- Card Header - Dropdown -->
+        <div
+          class="card-header py-3 d-flex flex-row align-items-center justify-content-between"
+        >
+          <h6 class="m-0 text-primary">
+            Утверждение кандидата на должность
+            <span class="m-0 font-weight-bold"
+              >председателя Правления Товарищества</span
+            >
+            - <br />
+            <i>Варовина Ольга Игоревна, сроком на 2 (два) года</i>
+          </h6>
+          <div class="dropdown no-arrow">
+            <a
+              class="dropdown-toggle"
+              href="#"
+              role="button"
+              id="dropdownMenuLink"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+            </a>
+            <div
+              class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
+              aria-labelledby="dropdownMenuLink"
+            >
+              <div class="dropdown-header">Dropdown Header:</div>
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div>
+        </div>
+        <!-- Card Body -->
+        <div class="card-body">
+          <div class="chart-pie pt-4 pb-2">
+            <canvas id="Chairman"></canvas>
+          </div>
+          <div class="mt-4 text-center small">
+            <span class="mr-2">
+              <i class="fas fa-circle" style="color: #1cc88a"></i> За
+            </span>
+            <span class="mr-2">
+              <i class="fas fa-circle" style="color: #dcde73"></i> Воздержались
+            </span>
+            <span class="mr-2">
+              <i class="fas fa-circle" style="color: #de7373"></i> Против
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ============================================================================= -->
+    <!-- Pie Chart -->
+    <!-- novokosulino\newsapp\static\newsapp\js\demo\chart-pie-demo.js -->
+    <!-- id= myPieChart -->
+    <div class="col-xl-4 col-lg-5">
+      <div class="card shadow mb-4">
+        <!-- Card Header - Dropdown -->
+        <div
+          class="card-header py-3 d-flex flex-row align-items-center justify-content-between"
+        >
+          <h6 class="m-0 text-primary">
+            Утверждение кандидатов
+            <span class="m-0 font-weight-bold"
+              >ревизионной комиссии Товарищества</span
+            >
+            - <br />
+            <i>- Ковалева Ирина Юрьевна;</i>
+            - <br />
+            <i>- Цварц Алиса Александровна</i>
+          </h6>
+          <div class="dropdown no-arrow">
+            <a
+              class="dropdown-toggle"
+              href="#"
+              role="button"
+              id="dropdownMenuLink"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+            </a>
+            <div
+              class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
+              aria-labelledby="dropdownMenuLink"
+            >
+              <div class="dropdown-header">Dropdown Header:</div>
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div>
+        </div>
+        <!-- Card Body -->
+        <div class="card-body">
+          <div class="chart-pie pt-4 pb-2">
+            <canvas id="Revision"></canvas>
+          </div>
+          <div class="mt-4 text-center small">
+            <span class="mr-2">
+              <i class="fas fa-circle" style="color: #1cc88a"></i> За
+            </span>
+            <span class="mr-2">
+              <i class="fas fa-circle" style="color: #dcde73"></i> Воздержались
+            </span>
+            <span class="mr-2">
+              <i class="fas fa-circle" style="color: #de7373"></i> Против
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ============================================================================= -->
+    <!-- Pie Chart -->
+    <!-- novokosulino\newsapp\static\newsapp\js\demo\chart-pie-demo.js -->
+    <!-- id= myPieChart -->
+    <div class="col-xl-4 col-lg-5">
+      <div class="card shadow mb-4">
+        <!-- Card Header - Dropdown -->
+        <div
+          class="card-header py-3 d-flex flex-row align-items-center justify-content-between"
+        >
+          <h6 class="m-0 text-primary">
+            Утверждение
+            <span class="m-0 font-weight-bold">доступа</span>
+            - <br />
+            для членов ревизионной комиссии к индивидуальным лицевым счетам для
+            проверки корректности начислений членских взносов в Товариществе
+          </h6>
+          <div class="dropdown no-arrow">
+            <a
+              class="dropdown-toggle"
+              href="#"
+              role="button"
+              id="dropdownMenuLink"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+            </a>
+            <div
+              class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
+              aria-labelledby="dropdownMenuLink"
+            >
+              <div class="dropdown-header">Dropdown Header:</div>
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div>
+        </div>
+        <!-- Card Body -->
+        <div class="card-body">
+          <div class="chart-pie pt-4 pb-2">
+            <canvas id="Access"></canvas>
+          </div>
+          <div class="mt-4 text-center small">
+            <span class="mr-2">
+              <i class="fas fa-circle" style="color: #1cc88a"></i> За
+            </span>
+            <span class="mr-2">
+              <i class="fas fa-circle" style="color: #dcde73"></i> Воздержались
+            </span>
+            <span class="mr-2">
+              <i class="fas fa-circle" style="color: #de7373"></i> Против
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ============================================================================= -->
   </div>
+
   <div class="row">
     <div class="col-lg-6 mb-4">
       <!-- Project Card Example -->
@@ -312,5 +636,4 @@
     </div>
   </div>
 </div>
-
 {% endblock content %}
